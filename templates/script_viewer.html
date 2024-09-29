@@ -1,0 +1,43 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Script</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for each in file_data %}
+      <tr>
+        <td>{{each.filename}}</td>
+        <td>
+            <!--script description-->
+            <div>
+                <h4>Description</h4>
+                <p>{{each.description}}</p>
+            </div>
+            <!--script tags-->
+            <div>
+                <h4>Tags</h4>
+                <p>
+                    {% for each_tag in each.tags %}
+                        <span class="badge badge-pill badge-dark">{{each_tag}}</span>
+                    {% endfor %}
+                </p>
+            </div>
+            <!--script context-->
+            <div>
+                <h4>Context</h4>
+                <p>
+                    <ol>
+                        {% for each_context in each.context %}
+                            <li>{{each_context}}</li>
+                        {% endfor %}
+                    </ol>
+                </p>
+            </div>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  
