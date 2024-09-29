@@ -24,4 +24,4 @@ def index_page():
     return render_template('index.html', title=page_title, file_data = script_file_data)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
