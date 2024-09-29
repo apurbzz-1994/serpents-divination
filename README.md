@@ -46,5 +46,5 @@ For more information, click on the "How does it work" button while using the too
 
 ## Upcoming features
 - Ability to print documentation table and generate markdown for different platforms
-- Automating the generation of instructions on how to run each scripts and what to look out for to minimise error during script run(e.g a script taking an argument or requires a csv file)
+- Automating the generation of instructions on how to run each script and what to look out for to minimise error during script run(e.g a script taking an argument or requires a csv file)
  
