@@ -17,6 +17,8 @@ Given that you've written a script in the following manner...
 
 ![rendered html](/git_assets/f2.png)
 
+For more information, click on the "How does it work" button while using the tool.
+
 
 ## How to run
 1. Install the latest version of Python from [https://www.python.org/downloads](https://www.python.org/downloads/), ensuring that you've added Python to your `PATH` (more on this here: [https://realpython.com/add-python-to-path](https://realpython.com/add-python-to-path/)). 
