@@ -25,14 +25,8 @@
     }
 </style>
 <body>
-    <nav class="navbar navbar-light" style="background-color: #aebd93;">
-        <span class="navbar-brand mb-0 h1">{{title}}</span>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#info-modal">How does it work?</button>
-                </li>
-            </ul>
-    </nav>
+    <!--navbar template-->
+    {% include 'navbar.html' %}
     <div class="container-fluid">
         <div class="row mx-5 my-5">
             <div class="col-12 col-md-12 col-lg-12">
@@ -42,62 +36,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal for displaying graph JSON-->
-    <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="infoModalLabel">How does it work?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-               <h4>Introduction</h4>
-               <p>
-                This nifty tool can be used to procure documentation and insights for a collection of 
-                Python scripts in your local directory. At the moment, the tool reads code comments with 
-                certain keywords and then renders them in a documentation format. 
-               </p>
-               <h4>How to use</h4>
-               <p>First off, place all your scripts in the project's <b>scripts</b> folder. Afterwards, depending
-                on how you write your script, the documentation gets rendered as follows: </p>
-               <table class="table table-bordered">
-                <thead>
-                    <tr>
-                      <th scope="col">Stuff in your script</th>
-                      <th scope="col">How it will get rendered</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td>Adding a multi-line comment (using ''') at the very top of your script</td>
-                        <td>Gets rendered as a <b>Description</b> in the Documentation</td>
-                    </tr>
-                    <tr>
-                        <td>Adding a single-line comment with the word <b>tags</b>
-                        and then a list of tags separated by commas as a single-line comment</td>
-                        <td>Gets rendered as tags in the documentation. However, it will render only the first
-                            instance of where the <b>tags</b> comment is being used and will ignore the rest
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Adding a single-line comment with the word <b>context</b>
-                        and then a list of tags separated by commas as a single-line comment</td>
-                        <td>Gets rendered as Context in the documentation. Use this to include useful clues and 
-                            steps at any step of your code as these will all be listed in the order they appear in your code. 
-                        </td>
-                    </tr>
-                  </tbody>
-               </table>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-        </div>
-    </div>
+    <!--info modal template-->
+    {% include 'info_modal.html' %}
 </body>
 <!--stuff for bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

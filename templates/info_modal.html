@@ -1,0 +1,55 @@
+    <!-- Modal for displaying tool info-->
+    <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">How does it work?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+               <h4>Introduction</h4>
+               <p>
+                This nifty tool can be used to procure documentation and insights for a collection of 
+                Python scripts in your local directory. At the moment, the tool reads code comments with 
+                certain keywords and then renders them in a documentation format. 
+               </p>
+               <h4>How to use</h4>
+               <p>First off, place all your scripts in the project's <b>scripts</b> folder. Afterwards, depending
+                on how you write your script, the documentation gets rendered as follows: </p>
+               <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <th scope="col">Stuff in your script</th>
+                      <th scope="col">How it will get rendered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Adding a multi-line comment (using ''') at the very top of your script</td>
+                        <td>Gets rendered as a <b>Description</b> in the Documentation</td>
+                    </tr>
+                    <tr>
+                        <td>Adding a single-line comment with the word <b>tags</b>
+                        and then a list of tags separated by commas as a single-line comment</td>
+                        <td>Gets rendered as tags in the documentation. However, it will render only the first
+                            instance of where the <b>tags</b> comment is being used and will ignore the rest
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adding a single-line comment with the word <b>context</b>
+                        and then a list of tags separated by commas as a single-line comment</td>
+                        <td>Gets rendered as Context in the documentation. Use this to include useful clues and 
+                            steps at any step of your code as these will all be listed in the order they appear in your code. 
+                        </td>
+                    </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>

@@ -33,7 +33,6 @@ def get_script_insights(filename):
             break
     
     all_context = [all_lines[y+1][1:len(all_lines[y+1])] for y in range(0, len(all_lines)) if all_lines[y].startswith('#context\n') or all_lines[y].startswith('# context\n')]
-    print(all_context)
     
     file_data['tags'] = all_tags
     file_data['context'] = all_context
