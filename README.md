@@ -33,7 +33,9 @@ For more information, click on the "How does it work" button while using the too
 
     This will install all necessary modules. 
 
-4. To run the application, open a terminal, `cd` to the correct directory and run the following command:
+4. Create a folder called `scripts` and place all your scripts there. 
+
+5. To run the application, open a terminal, `cd` to the correct directory and run the following command:
 
     ```
     python3 app.py
@@ -41,7 +43,7 @@ For more information, click on the "How does it work" button while using the too
 
     Depending on your system, you may need to use `python` or `python3` in the above command. 
 
-5. The command in step 4 will launch a Flask development server (usally on http://127.0.0.1:5000), but check the command line as it might be running on a different localhost ip address. 
+6. The command in step 4 will launch a Flask development server (usally on http://127.0.0.1:5000), but check the command line as it might be running on a different localhost ip address. 
 
 
 ## Upcoming features
