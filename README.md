@@ -4,7 +4,7 @@ Automating documentation and insights procurement for your local Python scripts
 ![first version screenshot](/git_assets/sgrab_1.png)
 
 # Introduction
-Serpent's Divinition (excuse the super dramatic name!) is a nifty tool that can be used to procure documentation and insights for a collection of Python scripts in your local directory. The goal is to use the resultant documentation for knowledge sharing between teams, drafting README.md files, assisting those who are just starting out with Python with running your scripts etc. 
+Serpent's Divination (excuse the super dramatic name!) is a nifty tool that can be used to procure documentation and insights for a collection of Python scripts in your local directory. The goal is to use the resultant documentation for knowledge sharing between teams, drafting README.md files, assisting those who are just starting out with Python with running your scripts etc. 
 
 ## What does it do (for now)?
 
